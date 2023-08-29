@@ -1,0 +1,92 @@
+//
+// LUI-3
+// (C) Jiří Bělský (github.com/wUFr)
+// MIT licenced
+//
+
+
+.lui.label {
+	.this(){
+		display: inline-block;
+		padding: 0 5px;
+
+		background: #dfe8ec;
+		border-radius: 3px;
+
+		line-height: 16px;
+
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+
+		text-decoration: none;
+
+		font-size: 11px;
+		color: black;
+	}
+
+	.hover(){
+		background: darken(#dfe8ec, 10%);
+		color: black;
+	}
+
+	.positive(){
+		background: @color_positive;
+		color: white;
+	}
+
+	.positive-hover(){
+		background: darken(@color_positive, 10%);
+		color: white;
+	}
+
+	.negative(){
+		background: @color_negative;
+		color: white;
+	}
+
+	.negative-hover(){
+		background: darken(@color_negative, 10%);
+		color: white;
+	}
+
+	.warning(){
+		background: @color_warning;
+		color: white;
+	}
+
+	.warning-hover(){
+		background: darken(@color_warning, 10%);
+		color: white;
+	}
+
+	.notice(){
+		background: @color_notice;
+		color: white;
+	}
+
+	.notice-hover(){
+		background: darken(@color_notice, 10%);
+		color: white;
+	}
+}
+
+.lui.labels_group {
+	.this(){
+		.lui.flexbox.block();
+		.lui.flexbox.flex-wrap(wrap);
+		padding: 0;
+		margin: 0 0 -3px 0;
+
+		list-style: none;
+	}
+
+	.item(){
+		height: 19px;
+
+		padding: 0 3px 3px 0; // RESET JUST IN CASE
+		margin: 0;
+
+		line-height: 16px;
+	}
+}

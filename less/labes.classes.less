@@ -1,0 +1,59 @@
+//
+// LUI-3
+// (C) Jiří Bělský (github.com/wUFr)
+// MIT licenced
+//
+
+
+& when (@lui_labels = true){
+
+	.lui_label {
+		.lui.label.this();
+
+		&.positive {
+			.lui.label.positive();
+		}
+
+		&.negative {
+			.lui.label.negative();
+		}
+
+		&.warning {
+			.lui.label.warning();
+		}
+
+		&.notice {
+			.lui.label.notice();
+		}
+	}
+
+	a.lui_label {
+		&:hover {
+			.lui.label.hover();
+		}
+
+		&.positive:hover {
+			.lui.label.positive-hover();
+		}
+
+		&.negative:hover {
+			.lui.label.negative-hover();
+		}
+
+		&.warning:hover {
+			.lui.label.warning-hover();
+		}
+
+		&.notice:hover {
+			.lui.label.notice-hover();
+		}
+	}
+
+	.lui_labels_group when (@lui_labels_groups = true) {
+		.lui.labels_group.this();
+
+		li {
+			.lui.labels_group.item();
+		}
+	}
+}
