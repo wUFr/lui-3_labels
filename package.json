@@ -1,5 +1,5 @@
 {
-	"name": "lui-3_labels",
+	"name": "@wUFr/lui-3_labels",
 	"version": "3.7.0",
 	"description": "LUI-3 framework - labels component",
 	"repository": "https://github.com/wUFr/lui-3_labels",
@@ -7,6 +7,6 @@
 	"license": "MIT",
 	"private": false,
 	"dependencies": {
-		"lui-3_base": "~3.7.0"
+		"@wUFr/lui-3_base": "~3.7.0"
 	}
 }
